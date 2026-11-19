@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilot's Manual</title>
+<style>
+  :root {
+    --ink: #141c33; --paper: #f2f3f7; --card: #ffffff; --line: #dfe3ec;
+    --muted: #5b6478; --flare: #f08c26; --done: #3fa66a; --sky: #1d2a4d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; }
+  .hero { position: relative; height: 230px; background: var(--sky) url("data:image/jpeg;base64,__HEADER__") center/cover no-repeat; }
+  .hero .t { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 20px 22px; max-width: 800px; margin: 0 auto;
+             color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.55); }
+  .hero h1 { font-size: 40px; line-height: 1; margin: 0 0 6px; letter-spacing: .08em; font-weight: 900; }
+  .hero p { margin: 0; font-weight: 600; opacity: .9; }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 28px 20px 70px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+           color: var(--flare); border: 1.5px solid var(--flare); border-radius: 999px; padding: 2px 10px; }
+  h2 { font-size: 22px; margin: 38px 0 12px; letter-spacing: .02em; }
+  h2 small { display: block; font-size: 12px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; font-weight: 700; }
+  .brief { background: #fff6ec; border-left: 4px solid var(--flare); padding: 12px 16px; border-radius: 0 12px 12px 0; margin: 18px 0; }
+  .leg { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px 12px 70px;
+         margin: 12px 0; position: relative; box-shadow: 0 1px 2px rgba(20,28,51,.05); }
+  .leg .n { position: absolute; left: 18px; top: 16px; width: 36px; height: 36px; border-radius: 50%; background: var(--flare);
+            color: #fff; font-weight: 900; display: grid; place-items: center; }
+  .leg h3 { margin: 0 0 4px; font-size: 18px; }
+  .leg p { margin: 6px 0; color: #2c3550; }
+  .btn { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+         background: var(--flare); color: #fff; padding: 2px 9px; border-radius: 7px; white-space: nowrap; }
+  .btn.alt { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+  code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: #e8ebf2; border-radius: 6px; padding: 1px 6px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden;
+          border: 1px solid var(--line); font-size: 15px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #e9ecf3; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 9px 0; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p, details ul { color: #2c3550; }
+  a { color: #1f5fbf; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 46px; border-top: 1px solid var(--line); padding-top: 14px; }
+  @media (max-width: 520px) { .hero h1 { font-size: 30px; } .leg { padding-left: 18px; padding-top: 60px; } }
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="t">
+  <span class="badge" style="color:#ffd9b0;border-color:#ffd9b0">Unofficial community port</span>
+  <h1>PILOT'S MANUAL</h1>
+  <p>World of Warplanes for Mac · Apple Silicon</p>
+</div></div>
+
+<div class="wrap">
+
+<div class="brief"><b>Briefing.</b> This package is made by a player, not by Wargaming. It contains <b>no game files</b>: you download Game Center and the game from Wargaming yourself, so you always fly the real, current game. World of Warplanes and Wargaming are trademarks of their owners.</div>
+
+<h2><small>Pre-flight check</small>What you need</h2>
+<table>
+  <tr><th>Item</th><th>Requirement</th></tr>
+  <tr><td>Aircraft</td><td>A Mac with Apple Silicon (M1 or newer)</td></tr>
+  <tr><td>Flight software</td><td>macOS 26 or 27 (tested on macOS 27)</td></tr>
+  <tr><td>Rosetta</td><td>Needed; macOS offers to install it the first time</td></tr>
+  <tr><td>Hangar space</td><td>About 30 GB free (plane ~2 GB, game ~25 GB)</td></tr>
+  <tr><td>Pilot licence</td><td>A free Wargaming account (you can make one in Game Center)</td></tr>
+</table>
+
+<h2><small>Mission plan</small>From hangar to airborne</h2>
+<p>Open <b>Flight Deck</b> from the disk image. It walks you through every leg with one button each.</p>
+
+<div class="leg"><div class="n">1</div>
+  <h3>Roll out of the hangar</h3>
+  <p>Click <span class="btn">Roll out</span>. Flight Deck copies the plane into your Applications folder (about 2 GB). Or drag <b>World of Warplanes</b> onto <b>Applications</b> yourself.</p>
+</div>
+<div class="leg"><div class="n">2</div>
+  <h3>Fuel up</h3>
+  <p>Click your region (<span class="btn alt">Asia</span> <span class="btn alt">Europe</span> <span class="btn alt">N. America</span>) to open Wargaming's official site, then download the <b>Windows</b> version (a <code>.exe</code> file). Back in Flight Deck, click <span class="btn">Load fuel</span> and choose that file.</p>
+</div>
+<div class="leg"><div class="n">3</div>
+  <h3>Ready for takeoff</h3>
+  <p>Click <span class="btn">Start engines</span>. Wargaming's installer opens: click through it like on Windows. When it's done, Game Center opens by itself.</p>
+</div>
+<div class="leg"><div class="n">4</div>
+  <h3>Get airborne!</h3>
+  <p>Log in to Game Center, install <b>World of Warplanes</b> (about 25 GB) and hit <b>Play</b>. From now on, just open <b>World of Warplanes</b> from Applications. Game Center keeps the game updated.</p>
+</div>
+
+<h2><small>Cockpit settings</small>Recommended in-game graphics</h2>
+<p>Tested on a fanless MacBook Air (M5). On a Mac with a fan you can push things higher.</p>
+<table>
+  <tr><th>Setting</th><th>Set to</th><th>Why</th></tr>
+  <tr><td>Display mode</td><td>Fullscreen or borderless, native resolution</td><td>Sharpest picture</td></tr>
+  <tr><td>Vertical synchronization</td><td>Off</td><td>Avoids being locked to 30 FPS</td></tr>
+  <tr><td>Texture Quality</td><td>Medium</td><td>"High" stays locked on this port</td></tr>
+  <tr><td>Texture Filtering</td><td>Highest (16x)</td><td>Sharp ground, almost free</td></tr>
+  <tr><td>Antialiasing</td><td>On</td><td>Smooth edges, almost free</td></tr>
+  <tr><td>Render Quality</td><td>Lowest; raise last</td><td>Biggest effect on FPS</td></tr>
+  <tr><td>Shadows, Water, Post-Effects, Semi-transparent objects</td><td>Lowest</td><td>Expensive, little benefit</td></tr>
+  <tr><td>Motion Blur</td><td>Off</td><td>Costs FPS and hurts aiming</td></tr>
+</table>
+<p>Expect roughly 25–35 FPS on a MacBook Air. Turn on <b>FPS, ping, packet loss</b> in the game's interface settings to watch your numbers.</p>
+
+<h2><small>Mayday</small>Questions &amp; problems</h2>
+
+<details><summary>macOS won't open Flight Deck ("can't be verified" / "damaged")</summary>
+  <p>macOS blocks apps from outside the App Store. Open <b>System Settings → Privacy &amp; Security</b>, scroll down, and click <b>Open Anyway</b> next to Flight Deck. Then open it again.</p>
+</details>
+<details><summary>"Do not try to run the Installer if the wrapper is already running something else"</summary>
+  <p>Something from the plane is still running. Click <span class="btn alt">Mayday</span> in Flight Deck: it shuts everything down and resets the plane. Then click <span class="btn">Start engines</span> again.</p>
+</details>
+<details><summary>Nothing happens when I open World of Warplanes</summary>
+  <p>Game Center isn't installed yet. Finish legs 2 and 3 in Flight Deck first.</p>
+</details>
+<details><summary>The game froze or crashed and now won't start</summary>
+  <p>Open Flight Deck and click <span class="btn alt">Mayday</span>, then open World of Warplanes again.</p>
+</details>
+<details><summary>Is this safe? Is it legal?</summary>
+  <p>The plane is a standard Wine wrapper (the same technology as Porting Kit and CrossOver). It contains no game files and no account data. You download Game Center and the game from Wargaming yourself.</p>
+</details>
+<details><summary>Do I need Porting Kit, CrossOver or Sikarugir?</summary>
+  <p>No. The Wine engine, settings and fixes are already inside the plane.</p>
+</details>
+<details><summary>Which server can I fly on?</summary>
+  <p>Any of them: pick the server on the game's login screen, the same as on Windows. Download Game Center from the site for the region you play in.</p>
+</details>
+<details><summary>Why is High texture quality greyed out?</summary>
+  <p>World of Warplanes is a 32-bit game, and it decides it can't safely use High textures under this Wine version. Medium looks close, and the HD client isn't worth its extra 24 GB here.</p>
+</details>
+<details><summary>Why is FPS lower than on a Windows PC?</summary>
+  <p>The game uses DirectX 9, which Macs don't have. Wine translates it to OpenGL as you fly, which costs performance: about 3–4× slower than a native Mac app in our tests. The cockpit settings above help a lot.</p>
+</details>
+<details><summary>My MacBook Air gets hot and FPS drops after a while</summary>
+  <p>Fanless Macs slow down when warm. Fly plugged in, on a hard surface or a stand (a cooling pad helps), with Low Power Mode off.</p>
+</details>
+<details><summary>Can Vulkan or Apple's D3DMetal give more FPS?</summary>
+  <p>No. We tested it: DirectX 9 through Vulkan fails or crashes on Mac, and D3DMetal only supports 64-bit DirectX 11/12 games. OpenGL, the default here, is the one that works.</p>
+</details>
+<details><summary>How do I uninstall it?</summary>
+  <p>Drag <b>World of Warplanes</b> from Applications to the Trash. The game, Game Center and settings are all stored inside it, so that removes everything.</p>
+</details>
+<details><summary>What's inside the plane, technically?</summary>
+  <ul>
+    <li>Wineskin wrapper with the <b>WineskinCX 23.7.1-4</b> engine (best DirectX 9 performance in Unigine Heaven tests)</li>
+    <li><code>shcore.dll</code> from Wine 11, so Game Center 26.x starts on this engine</li>
+    <li>OpenGL renderer, trackpad scrolling fix, Game Mode label</li>
+    <li>Microsoft Visual C++ runtimes (redistributable), needed by Game Center and the game</li>
+  </ul>
+</details>
+
+<footer>Unofficial community port. Not affiliated with, endorsed by or supported by Wargaming. Aircraft artwork is original. Wine is free software (LGPL). Uses the Wineskin wrapper and an engine from the Porting Kit engine collection.</footer>
+</div>
+</body>
+</html>
