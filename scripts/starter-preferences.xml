@@ -1,0 +1,91 @@
+<root>
+	<scriptsPreferences>
+		<gsAutodetectInited2>	true	</gsAutodetectInited2>
+		<gsAutodetectEnabled>	false	</gsAutodetectEnabled>
+	</scriptsPreferences>
+	<FILE_VERSION>	58	</FILE_VERSION>
+	<graphicsPreferences>
+		<deviceGUID>	6B100000.0902031B.00000000.00000000	</deviceGUID>
+		<entry>
+			<label>	TEXTURE_QUALITY	</label>
+			<activeOption>	1	</activeOption>
+		</entry>
+		<entry>
+			<label>	TEXTURE_COMPRESSION	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	TEXTURE_FILTERING	</label>
+			<activeOption>	1	</activeOption>
+		</entry>
+		<entry>
+			<label>	MORPH_VERTICES	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	POSTFX	</label>
+			<activeOption>	2	</activeOption>
+		</entry>
+		<entry>
+			<label>	MOTIONBLUR	</label>
+			<activeOption>	2	</activeOption>
+		</entry>
+		<entry>
+			<label>	FXAA	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	PARTICLES_QUALITY	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	BACKBUFER_QUALITY	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	WATER_QUALITY	</label>
+			<activeOption>	1	</activeOption>
+		</entry>
+		<entry>
+			<label>	VOLUMETRICCLOUDS	</label>
+			<activeOption>	1	</activeOption>
+		</entry>
+		<entry>
+			<label>	SHADOWS_QUALITY	</label>
+			<activeOption>	2	</activeOption>
+		</entry>
+		<entry>
+			<label>	FAR_PLANE	</label>
+			<activeOption>	0	</activeOption>
+		</entry>
+		<entry>
+			<label>	OBJECT_LOD	</label>
+			<activeOption>	1	</activeOption>
+		</entry>
+		<entry>
+			<label>	OBJECT_CLIP	</label>
+			<activeOption>	2	</activeOption>
+		</entry>
+		<entry>
+			<label>	TREES	</label>
+			<activeOption>	2	</activeOption>
+		</entry>
+	</graphicsPreferences>
+	<devicePreferences>
+		<deviceIndex>	0	</deviceIndex>
+		<windowed>	true	</windowed>
+		<borderless>	true	</borderless>
+		<waitVSync>	false	</waitVSync>
+		<tripleBuffering>	false	</tripleBuffering>
+		<gamma>	1.000000	</gamma>
+		<windowedMaximized>	false	</windowedMaximized>
+		<windowedPosX>	0	</windowedPosX>
+		<windowedPosY>	0	</windowedPosY>
+		<miximizedWindowPosX>	0	</miximizedWindowPosX>
+		<miximizedWindowPosY>	0	</miximizedWindowPosY>
+		<windowedWidth>	1710	</windowedWidth>
+		<windowedHeight>	1107	</windowedHeight>
+		<fullscreenWidth>	1710	</fullscreenWidth>
+		<fullscreenHeight>	1107	</fullscreenHeight>
+	</devicePreferences>
+</root>
